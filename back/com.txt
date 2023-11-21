@@ -1,0 +1,4 @@
+uvicorn main:app --reload
+alembic revision --autogenerate -m "Baseline"
+alembic revision --autogenerate -m "correct name of tasks column to completed"
+alembic upgrade head
