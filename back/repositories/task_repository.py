@@ -13,17 +13,19 @@ class TaskRepository:
 
     def get_tasks(self, user_id: int,query_object: QueryObjectDto):
 
-        base_query = self.db.query(Task).filter(Task.user_id == user_id)
+        base_query = self.db.query(Task)
+        base_query = base_query.filter(Task.user_id == user_id)
+
+        if query_object.sorting == SortingEnum.Asc:
+            base_query = base_query.order_by(Task.priority.asc())
+        elif query_object.sorting == SortingEnum.Dsc:
+            base_query = base_query.order_by(Task.priority.desc())
 
         if query_object.filter == FilterEnum.Completed:
             base_query = base_query.where(Task.completed == True)
         elif query_object.filter == FilterEnum.NotCompleted:
             base_query = base_query.where(Task.completed == False) 
 
-        if query_object.sorting == SortingEnum.Asc:
-            base_query = base_query.order_by(Task.priority.asc())
-        elif query_object.sorting == SortingEnum.Dsc:
-            base_query = base_query.order_by(Task.priority.desc())
 
         total_tasks = base_query.count()
 
@@ -34,7 +36,7 @@ class TaskRepository:
             .limit(query_object.perPage)
             .all()
         )
-        
+
         return {
             "tasks": tasks,
             "total": total_tasks,
@@ -53,6 +55,7 @@ class TaskRepository:
         existing_task.description = task.description
         existing_task.priority = task.priority
         existing_task.completed = task.completed
+        self.db.commit()
         return True
 
     def delete_task(self, task_id: int):
