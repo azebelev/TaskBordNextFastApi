@@ -1,5 +1,5 @@
 'use client';
-import { AuthCard, LoginDto } from '@/components/AuthCard';
+import { AuthCard, LoginDto } from '../../../components/AuthCard';
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 

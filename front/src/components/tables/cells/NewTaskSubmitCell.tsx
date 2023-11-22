@@ -1,6 +1,6 @@
-import { IconButton } from '@/components/buttons/IconButton';
-import { CancelIcon } from '@/components/icons/CancelIcon';
-import { CheckBirdIcon } from '@/components/icons/CheckBirdIcon';
+import { IconButton } from '../../../components/buttons/IconButton';
+import { CancelIcon } from '../../../components/icons/CancelIcon';
+import { CheckBirdIcon } from '../../../components/icons/CheckBirdIcon';
 
 export function NewTaskSubmitCell({
   onCancel,

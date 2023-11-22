@@ -1,5 +1,5 @@
-import { IconButton } from '@/components/buttons/IconButton';
-import { CheckBirdIcon } from '@/components/icons/CheckBirdIcon';
+import { IconButton } from '../../../components/buttons/IconButton';
+import { CheckBirdIcon } from '../../../components/icons/CheckBirdIcon';
 
 export function CheckBoxCell({
     isChecked,

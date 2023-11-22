@@ -1,4 +1,4 @@
-import { NewTaskDto } from '@/components/tables/AddTaskTable';
+import { NewTaskDto } from '../components/tables/AddTaskTable';
 import { QueryObject, Task, TasksData } from '@/interfaces/taskTypes';
 import { useSession } from 'next-auth/react';
 import { useEffect, useState } from 'react';

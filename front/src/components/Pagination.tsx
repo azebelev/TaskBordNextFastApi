@@ -1,4 +1,4 @@
-import { QueryObject } from '@/interfaces/taskTypes';
+import { QueryObject } from '../interfaces/taskTypes';
 import { SetStateAction } from 'react';
 import { ArrowLeft } from './icons/ArrowLeft';
 import { ArrowRight } from './icons/ArrowRight';

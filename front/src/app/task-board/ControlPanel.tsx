@@ -1,8 +1,8 @@
-import { ArrowLeft } from '@/components/icons/ArrowLeft';
-import { ArrowRight } from '@/components/icons/ArrowRight';
-import { FilterEnum } from '@/enums/filterEnum';
-import { SortingEnum } from '@/enums/sortingEnum';
-import { QueryObject } from '@/interfaces/taskTypes';
+import { ArrowLeft } from '../../components/icons/ArrowLeft';
+import { ArrowRight } from '../../components/icons/ArrowRight';
+import { FilterEnum } from '../../enums/filterEnum';
+import { SortingEnum } from '../../enums/sortingEnum';
+import { QueryObject } from '../../interfaces/taskTypes';
 
 export function ControlPanel({
   queryObject,

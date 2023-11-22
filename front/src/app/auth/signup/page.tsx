@@ -1,6 +1,6 @@
 'use client';
-import { AuthCard, SignUpDto } from '@/components/AuthCard';
-import { headerValues, useApi } from '@/hooks/useApi';
+import { AuthCard, SignUpDto } from '../../../components/AuthCard';
+import { headerValues, useApi } from '../../../hooks/useApi';
 import { HttpStatusCode } from 'axios';
 import { signIn } from 'next-auth/react';
 

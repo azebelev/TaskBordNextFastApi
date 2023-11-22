@@ -1,6 +1,6 @@
-import { IconButton } from '@/components/buttons/IconButton';
-import { BucketIcon } from '@/components/icons/BucketIcon';
-import { ConfirmationModal } from '@/components/modals/ConfirmationModal';
+import { IconButton } from '../../../components/buttons/IconButton';
+import { BucketIcon } from '../../../components/icons/BucketIcon';
+import { ConfirmationModal } from '../../../components/modals/ConfirmationModal';
 import { useState } from 'react';
 
 export function DeleteCell({ handleDelete }: { handleDelete: () => void }) {

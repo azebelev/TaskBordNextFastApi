@@ -1,8 +1,8 @@
-import { CheckBoxCell } from '@/components/tables/cells/CheckBoxCell';
-import { DeleteCell } from '@/components/tables/cells/DeleteCell';
-import { TaskPriorityCell } from '@/components/tables/cells/TaskPriorityCell';
-import { TextAreaCell } from '@/components/tables/cells/TextAreaCell';
-import { Task } from '@/interfaces/taskTypes';
+import { CheckBoxCell } from '../../components/tables/cells/CheckBoxCell';
+import { DeleteCell } from '../../components/tables/cells/DeleteCell';
+import { TaskPriorityCell } from '../../components/tables/cells/TaskPriorityCell';
+import { TextAreaCell } from '../../components/tables/cells/TextAreaCell';
+import { Task } from '../../interfaces/taskTypes';
 import { useState } from 'react';
 
 export function TaskRow({

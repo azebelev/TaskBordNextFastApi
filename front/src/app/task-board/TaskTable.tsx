@@ -1,4 +1,4 @@
-import { Task } from '@/interfaces/taskTypes';
+import { Task } from '../../interfaces/taskTypes';
 import React from 'react';
 import { TaskRow } from './TaskRow';
 
